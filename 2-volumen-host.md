@@ -10,23 +10,23 @@ docker run -d --name <nombre contenedor> -v <ruta carpeta host>:<ruta carpeta co
 # docker run -d --name nginx -P -v C:\Users\jorma\OneDrive\Documentos\GitHub\2024A-ISWD633-Practica3\nginx\html:/usr/share/nginx/html nginx:alpine
 
 ### ¿Qué sucede al ingresar al servidor de nginx?
-# COMPLETAR CON LA RESPUESTA A LA PREGUNTA
+# El cliente no encuentra el recurso, tenemos un error 404
 
 ### ¿Qué pasa con el archivo index.html del contenedor?
-# COMPLETAR CON LA RESPUESTA A LA PREGUNTA
+# Al no haber un archivo index.html no lo encuentra por lo que no encuentra el recurso de inicio al iniciar un servidor web
 
 ### Ir a https://html5up.net/ y descargar un template gratuito, descomprirlo dentro de nginx/html
 ### ¿Qué sucede al ingresar al servidor de nginx?
-# COMPLETAR CON LA RESPUESTA A LA PREGUNTA
+# El resultado sigue siendo el mismo puesto que el volumen anterior ya ha sido cargado al contenedor
 
 ### Eliminar el contenedor
-# COMPLETAR CON EL COMANDO
+# docker rm nginx
 
 ### ¿Qué sucede al crear nuevamente el mismo contenedor con volumen de tipo host a los directorios definidos anteriormente?
-# COMPLETAR CON LA RESPUESTA A LA PREGUNTA
+# Ahora si se ha pasado el template como volumen al nuevo contenedor, y se puede visualizar
 
 ### ¿Qué hace el comando pwd?
-# COMPLETAR CON LA RESPUESTA A LA PREGUNTA
+# Es un comando que lista los contenidos de un directorio específico, es parecido al comando ls en Linux
 Si quieres incluir el comando pwd dentro de un comando de Docker, lo puedes hacer de diferentes maneras dependiendo del shell que estés utilizando.
 
 
